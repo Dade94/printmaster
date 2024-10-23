@@ -37,7 +37,7 @@ $tpl->place('header');
 				<td class="caption"><label for="location">Location</label></td>
 				<td class="input">
 					<input id="location" type="text" name="location" value="<?php echo $p->getLocation() ?>"
-					maxlength="<?php echo $p->inspectName('max_length') ?>" />
+					maxlength="<?php echo $p->inspectLocation('max_length') ?>" />
 				</td>
 			</tr>
 
