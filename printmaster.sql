@@ -21,7 +21,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 CREATE TABLE IF NOT EXISTS `consumables` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
   `qty` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Quantity of consumable in stock',
   `col_c` tinyint(4) DEFAULT NULL COMMENT '1 if consumable is of colour ''Cyan''',
   `col_y` tinyint(4) DEFAULT NULL COMMENT '1 if consumable is of colour ''Yellow''',
