@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `printers` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `model_id` int(10) unsigned NOT NULL COMMENT 'Type of printer',
   `name` varchar(20) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Printer name',
-  `location` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Location/room where printer is',
+  `location` varchar(80) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Location/room where printer is',
   `department` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Department responsible for printer',
   `ipaddress` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Network address of printer',
   `server` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Print server installed on',
