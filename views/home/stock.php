@@ -62,7 +62,7 @@ foreach ($consumables as $c){
 	echo '<td width="20"><span class="qty">' . (int) $c->prepareQty() . '</span></td>';
 
 	// URL for updating stock
-	$url = sprintf('stock.php?consumable_id=%d&redirect=%s', $c->id, fURL::get());
+	$url = sprintf('stock.php?consumable_id=%d&redirect=%s', $c->getId(), fURL::get());
 	echo '<td align="center" width="20" valign="middle"><a href="' . $url . '" rel="stock">';
 	echo '<img src="web/img/package_green.png" width="16" height="16" alt="Enter new stock" />';
 	echo '</a></td>';
