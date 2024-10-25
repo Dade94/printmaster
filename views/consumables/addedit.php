@@ -24,7 +24,7 @@ $tpl->place('header');
 				<td class="input">
 					<input type="hidden" name="qty" value="<?php echo $c->getQty() ?>" />
 					<input id="qty" type="text" name="qty" value="<?php echo $c->getQty() ?>"
-						maxlength="10" size="1" <?php if($action != 'add'){ echo 'disabled="disabled"'; } ?> />
+						maxlength="10" size="1" <?php // if($action != 'add'){ echo 'disabled="disabled"'; } ?> />
 				</td>
 			</tr>
 
